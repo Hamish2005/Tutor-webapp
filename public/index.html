@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TutorFinder | Choose Role</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: #f3f4f6;
+    }
+
+    .role-container {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      color: #6b7280;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .role-btn {
+      min-width: 180px;
+      padding: 0.75rem 1rem;
+      border-radius: 999px;
+      border: none;
+      background: #2563eb;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.1s ease;
+    }
+
+    .role-btn.secondary {
+      background: #4b5563;
+    }
+
+    .role-btn:hover {
+      background: #1d4ed8;
+      transform: translateY(-1px);
+    }
+
+    .role-btn.secondary:hover {
+      background: #374151;
+    }
+  </style>
+</head>
+<body>
+  <div class="role-container">
+    <h1>TutorFinder Service</h1>
+    <p class="subtitle">
+      Match students with the best tutors for their courses. Choose how you
+      want to log in.
+    </p>
+
+    <div class="btn-row">
+      <button
+        class="role-btn"
+        onclick="window.location.href='/login.html'"
+      >
+        Student Login
+      </button>
+      <button
+        class="role-btn secondary"
+        onclick="window.location.href='/tutor-login.html'"
+      >
+        Tutor Login
+      </button>
+    </div>
+  </div>
+</body>
+</html>
